@@ -91,6 +91,16 @@ createApp(App).use(createI18nPlugin()).mount('#vue-root')
 
   const browser = await chromium.launch({ executablePath: BROWSER, headless: true })
   const page = await browser.newPage()
+  // The browser's own language decides the initial locale (CI Chrome reports
+  // en-US, a Chinese desktop reports zh-CN). Pin it so the assertions are
+  // deterministic and start from the source locale.
+  await page.addInitScript(() => {
+    try {
+      localStorage.setItem('source-i18n:locale', 'zh-CN')
+    } catch {
+      /* storage is optional */
+    }
+  })
   const errors = []
   page.on('pageerror', (error) => errors.push(error.message))
 
