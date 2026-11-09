@@ -134,7 +134,7 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "typecheck": "node node_modules/typescript/lib/tsc.js -p tsconfig.json",
-    "test": "node --test --test-concurrency=1 \"test/*.test.mjs\"",
+    "test": "node scripts/test.mjs",
     "check:secrets": "node scripts/check-secrets.mjs",
     "prepublishOnly": "node scripts/build.mjs && node scripts/check-secrets.mjs"
   },
