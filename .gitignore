@@ -1,0 +1,14 @@
+node_modules/
+dist/
+test/.tmp/
+*.tgz
+npm-debug.log*
+.DS_Store
+.env
+.env.*
+!.env.example
+.npmrc
+
+# Claude Code local settings (never commit personal permissions)
+.claude/settings.local.json
+.claude/settings.local.*

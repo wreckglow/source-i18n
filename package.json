@@ -1,0 +1,196 @@
+{
+  "name": "source-i18n",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "i18n without keys: write t('your text'), get catalogs generated and machine-translated automatically.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wreckglow/source-i18n.git"
+  },
+  "homepage": "https://github.com/wreckglow/source-i18n#readme",
+  "bugs": {
+    "url": "https://github.com/wreckglow/source-i18n/issues"
+  },
+  "sideEffects": [
+    "dist/esm/virtual-messages.js",
+    "dist/cjs/virtual-messages.js"
+  ],
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/types/index.d.ts",
+        "default": "./dist/esm/index.js"
+      },
+      "require": {
+        "types": "./dist/cjs/index.d.ts",
+        "default": "./dist/cjs/index.js"
+      }
+    },
+    "./react": {
+      "import": {
+        "types": "./dist/types/react.d.ts",
+        "default": "./dist/esm/react.js"
+      },
+      "require": {
+        "types": "./dist/cjs/react.d.ts",
+        "default": "./dist/cjs/react.js"
+      }
+    },
+    "./vue": {
+      "import": {
+        "types": "./dist/types/vue.d.ts",
+        "default": "./dist/esm/vue.js"
+      },
+      "require": {
+        "types": "./dist/cjs/vue.d.ts",
+        "default": "./dist/cjs/vue.js"
+      }
+    },
+    "./svelte": {
+      "import": {
+        "types": "./dist/types/svelte.d.ts",
+        "default": "./dist/esm/svelte.js"
+      },
+      "require": {
+        "types": "./dist/cjs/svelte.d.ts",
+        "default": "./dist/cjs/svelte.js"
+      }
+    },
+    "./vanilla": {
+      "import": {
+        "types": "./dist/types/vanilla.d.ts",
+        "default": "./dist/esm/vanilla.js"
+      },
+      "require": {
+        "types": "./dist/cjs/vanilla.d.ts",
+        "default": "./dist/cjs/vanilla.js"
+      }
+    },
+    "./node": {
+      "import": {
+        "types": "./dist/types/node.d.ts",
+        "default": "./dist/esm/node.js"
+      },
+      "require": {
+        "types": "./dist/cjs/node.d.ts",
+        "default": "./dist/cjs/node.js"
+      }
+    },
+    "./unplugin": {
+      "types": "./dist/types/unplugin/index.d.ts",
+      "import": "./dist/esm/unplugin/index.js"
+    },
+    "./unplugin/vite": {
+      "types": "./dist/types/unplugin/vite.d.ts",
+      "import": "./dist/esm/unplugin/vite.js"
+    },
+    "./unplugin/rollup": {
+      "types": "./dist/types/unplugin/rollup.d.ts",
+      "import": "./dist/esm/unplugin/rollup.js"
+    },
+    "./unplugin/webpack": {
+      "types": "./dist/types/unplugin/webpack.d.ts",
+      "import": "./dist/esm/unplugin/webpack.js"
+    },
+    "./unplugin/esbuild": {
+      "types": "./dist/types/unplugin/esbuild.d.ts",
+      "import": "./dist/esm/unplugin/esbuild.js"
+    },
+    "./mcp": {
+      "types": "./dist/types/mcp.d.ts",
+      "import": "./dist/esm/mcp.js"
+    },
+    "./package.json": "./package.json",
+    "./virtual-messages": {
+      "import": {
+        "types": "./dist/types/virtual-messages.d.ts",
+        "default": "./dist/esm/virtual-messages.js"
+      },
+      "require": {
+        "types": "./dist/cjs/virtual-messages.d.ts",
+        "default": "./dist/cjs/virtual-messages.js"
+      }
+    }
+  },
+  "bin": {
+    "source-i18n": "./dist/esm/cli.js",
+    "source-i18n-mcp": "./dist/esm/mcp.js"
+  },
+  "files": [
+    "dist",
+    "skills",
+    "assets",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "typecheck": "node node_modules/typescript/lib/tsc.js -p tsconfig.json",
+    "test": "node --test --test-concurrency=1 \"test/*.test.mjs\"",
+    "check:secrets": "node scripts/check-secrets.mjs",
+    "prepublishOnly": "node scripts/build.mjs && node scripts/check-secrets.mjs"
+  },
+  "keywords": [
+    "i18n",
+    "internationalization",
+    "localization",
+    "translation",
+    "machine-translation",
+    "typescript",
+    "vite",
+    "webpack",
+    "rollup",
+    "esbuild",
+    "unplugin",
+    "rspack"
+  ],
+  "dependencies": {
+    "unplugin": "^3.7.0"
+  },
+  "peerDependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "react": ">=18",
+    "vue": ">=3.3",
+    "zod": "^3.25 || ^4.0"
+  },
+  "peerDependenciesMeta": {
+    "@modelcontextprotocol/sdk": {
+      "optional": true
+    },
+    "react": {
+      "optional": true
+    },
+    "vue": {
+      "optional": true
+    },
+    "zod": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "@rspack/core": "^2.3.1",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "esbuild": "^0.28.2",
+    "intl-messageformat": "^12.1.4",
+    "playwright-core": "^1.65.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "rollup": "^4.68.0",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.6",
+    "vue": "^3.5.45",
+    "webpack": "^5.112.2",
+    "zod": "^4.6.7"
+  }
+}
