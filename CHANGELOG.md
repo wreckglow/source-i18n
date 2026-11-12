@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.1
+
+- Add the documentation site: <https://sourcei18n.deploybrain.cn>.
+- `package.json` `homepage` now points at the site instead of the repository.
+
 ## 0.1.0
 
 First release.

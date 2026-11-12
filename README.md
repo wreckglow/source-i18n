@@ -33,6 +33,11 @@
   </p>
 </div>
 
+<p align="center">
+  <a href="https://sourcei18n.deploybrain.cn/en">Website</a> &nbsp;·&nbsp;
+  <a href="https://github.com/wreckglow/source-i18n">GitHub</a>
+</p>
+
 <img src="assets/hero.jpg" alt="source-i18n — write the interface, ship every language" />
 
 ## What it is
@@ -238,6 +243,8 @@ The skill follows the Agent Skills open standard and is not tied to Claude Code.
 - `npm publish` runs a secret scan over every publishable file.
 
 ## Documentation
+
+**Live site:** [sourcei18n.deploybrain.cn/en](https://sourcei18n.deploybrain.cn/en)
 
 <img src="assets/docs.jpg" alt="source-i18n documentation site" />
 

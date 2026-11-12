@@ -1,6 +1,6 @@
 {
   "name": "source-i18n",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "description": "i18n without keys: write t('your text'), get catalogs generated and machine-translated automatically.",
   "license": "MIT",
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/wreckglow/source-i18n.git"
   },
-  "homepage": "https://github.com/wreckglow/source-i18n#readme",
+  "homepage": "https://sourcei18n.deploybrain.cn",
   "bugs": {
     "url": "https://github.com/wreckglow/source-i18n/issues"
   },

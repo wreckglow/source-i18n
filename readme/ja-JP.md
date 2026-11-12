@@ -33,6 +33,11 @@
   </p>
 </div>
 
+<p align="center">
+  <a href="https://sourcei18n.deploybrain.cn/ja">サイト</a> &nbsp;·&nbsp;
+  <a href="https://github.com/wreckglow/source-i18n">GitHub</a>
+</p>
+
 <img src="assets/hero.jpg" alt="source-i18n — インターフェースを書き、すべての言語で届ける" />
 
 ## これは何か
@@ -229,6 +234,8 @@ Skill は Agent Skills オープン標準に従い、Claude Code に縛られま
 - `npm publish` は公開対象の全ファイルをシークレットスキャンする。
 
 ## ドキュメント
+
+**サイト：** [sourcei18n.deploybrain.cn/ja](https://sourcei18n.deploybrain.cn/ja)
 
 <img src="assets/docs.jpg" alt="source-i18n ドキュメントサイト" />
 

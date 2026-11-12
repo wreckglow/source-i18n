@@ -33,6 +33,11 @@
   </p>
 </div>
 
+<p align="center">
+  <a href="https://sourcei18n.deploybrain.cn/cn">官网</a> &nbsp;·&nbsp;
+  <a href="https://github.com/wreckglow/source-i18n">GitHub</a>
+</p>
+
 <img src="assets/hero.jpg" alt="source-i18n — 写界面文案，发布所有语言" />
 
 ## 这是什么
@@ -229,6 +234,8 @@ Skill 遵循 Agent Skills 开放标准，不绑定 Claude Code。`.claude/skills
 - `npm publish` 会对所有可发布文件执行密钥扫描。
 
 ## 文档
+
+**官网：** [sourcei18n.deploybrain.cn/cn](https://sourcei18n.deploybrain.cn/cn)
 
 <img src="assets/docs.jpg" alt="source-i18n 文档站" />
 
