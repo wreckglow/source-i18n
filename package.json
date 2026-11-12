@@ -4,6 +4,10 @@
   "type": "module",
   "description": "i18n without keys: write t('your text'), get catalogs generated and machine-translated automatically.",
   "license": "MIT",
+  "author": {
+    "name": "wreckglow",
+    "email": "wreckglow@gmail.com"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wreckglow/source-i18n.git"

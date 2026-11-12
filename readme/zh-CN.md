@@ -14,7 +14,7 @@
   <h1>source-i18n</h1>
 
   <p>
-    <strong>没有 key 的 i18n。</strong><br />
+    <strong>前端项目的自动翻译工具。</strong><br />
     写界面文案，发布所有语言。
   </p>
 
@@ -35,6 +35,12 @@
 
 <img src="assets/hero.jpg" alt="source-i18n — 写界面文案，发布所有语言" />
 
+## 这是什么
+
+source-i18n 是给前端项目用的自动翻译工具。界面照常写中文或英文，构建时自动生成英、日、韩、西、法等语言版本；不用给每句话起 key，也不用维护语言包和导出表。
+
+适用：官网、后台管理系统、SaaS、Electron 桌面应用；React、Vue、Svelte 和原生 HTML 都能接。
+
 ## 理念
 
 翻译 key 是团队要额外维护的第二套语言。
@@ -50,6 +56,12 @@ t('save_project_button_confirm')
 // 之后
 t('保存项目')
 ```
+
+不用起 key，也不用导出文件。同一句源文，构建后就是五种译文：
+
+| 你写 | en-US | ja-JP | ko-KR | es-ES | fr-FR |
+|---|---|---|---|---|---|
+| `t('保存项目')` | Save project | プロジェクトを保存 | 프로젝트 저장 | Guardar proyecto | Enregistrer le projet |
 
 构建时每个 `t()` 调用都会被抽取，通过你选择的服务商翻译，并作为语言包注入。人工修改会被保留。缺失的文案会让 CI 失败，而不是让用户看到 fallback。
 
@@ -243,6 +255,7 @@ source-i18n 是有观点的。它在这些情况下很合适：
 - MIT 许可
 - 包：[`source-i18n`](https://www.npmjs.com/package/source-i18n)
 - 源码与 issue：[`wreckglow/source-i18n`](https://github.com/wreckglow/source-i18n)
+- 联系：[wreckglow@gmail.com](mailto:wreckglow@gmail.com)
 
 ## 免责声明
 

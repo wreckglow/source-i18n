@@ -14,7 +14,7 @@
   <h1>source-i18n</h1>
 
   <p>
-    <strong>i18n sans clés.</strong><br />
+    <strong>Traduction automatique pour projets frontend.</strong><br />
     Écrivez l'interface. Publiez dans toutes les langues.
   </p>
 
@@ -35,6 +35,17 @@
 
 <img src="assets/hero.jpg" alt="source-i18n — écrivez l'interface, publiez dans toutes les langues" />
 
+## Qu'est-ce que c'est
+
+source-i18n est un outil de traduction automatique pour les projets frontend.
+Écrivez l'interface en chinois ou en anglais comme d'habitude ; le build génère les
+versions anglaise, japonaise, coréenne, espagnole, française et d'autres langues.
+Pas de clé pour chaque phrase, pas de fichiers de langue à maintenir, pas de
+feuille d'export.
+
+Pour les sites vitrines, les back-offices, les SaaS et les applications de bureau
+Electron ; compatible React, Vue, Svelte et HTML natif.
+
 ## L'idée
 
 Les clés de traduction sont une seconde langue que votre équipe doit maintenir.
@@ -50,6 +61,12 @@ t('save_project_button_confirm')
 // après
 t('Save project')
 ```
+
+Aucune clé à inventer, aucun fichier à exporter. Une chaîne source devient cinq traductions au build :
+
+| Vous écrivez | zh-CN | ja-JP | ko-KR | es-ES | fr-FR |
+|---|---|---|---|---|---|
+| `t('Save project')` | 保存项目 | プロジェクトを保存 | 프로젝트 저장 | Guardar proyecto | Enregistrer le projet |
 
 Au moment du build, chaque appel `t()` est extrait, traduit par le fournisseur choisi et injecté sous forme de catalogue. Les modifications humaines sont conservées. Les chaînes manquantes font échouer la CI, pas vos utilisateurs.
 
@@ -243,6 +260,7 @@ Changer une chaîne source crée une nouvelle entrée de catalogue. C'est le co�
 - Licence MIT
 - Paquet : [`source-i18n`](https://www.npmjs.com/package/source-i18n)
 - Code et issues : [`wreckglow/source-i18n`](https://github.com/wreckglow/source-i18n)
+- Contact : [wreckglow@gmail.com](mailto:wreckglow@gmail.com)
 
 ## Avertissement
 

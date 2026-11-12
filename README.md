@@ -14,7 +14,7 @@
   <h1>source-i18n</h1>
 
   <p>
-    <strong>i18n without keys.</strong><br />
+    <strong>Automatic translation for frontend projects.</strong><br />
     Write the interface. Ship every language.
   </p>
 
@@ -35,6 +35,16 @@
 
 <img src="assets/hero.jpg" alt="source-i18n — write the interface, ship every language" />
 
+## What it is
+
+source-i18n is an automatic translation tool for frontend projects. Write the
+interface in Chinese or English as usual; the build generates English, Japanese,
+Korean, Spanish, French and other language versions. No key for every string, no
+language files to maintain, no export sheet.
+
+Built for marketing sites, admin dashboards, SaaS products and Electron desktop
+apps — with React, Vue, Svelte or plain HTML.
+
 ## The idea
 
 Translation keys are a second language your team has to maintain.
@@ -50,6 +60,12 @@ t('save_project_button_confirm')
 // after
 t('Save project')
 ```
+
+No key to invent. No export file to hand off. One source string becomes five translations at build time:
+
+| You write | zh-CN | ja-JP | ko-KR | es-ES | fr-FR |
+|---|---|---|---|---|---|
+| `t('Save project')` | 保存项目 | プロジェクトを保存 | 프로젝트 저장 | Guardar proyecto | Enregistrer le projet |
 
 At build time every `t()` call is extracted, translated through the provider you choose, and injected as a catalog. Human edits are preserved. Missing strings fail CI, not your users.
 
@@ -248,6 +264,7 @@ Changing a source string creates a new catalog entry. That is the cost of source
 - MIT licensed
 - Package: [`source-i18n`](https://www.npmjs.com/package/source-i18n)
 - Source and issues: [`wreckglow/source-i18n`](https://github.com/wreckglow/source-i18n)
+- Contact: [wreckglow@gmail.com](mailto:wreckglow@gmail.com)
 
 ## Disclaimer
 

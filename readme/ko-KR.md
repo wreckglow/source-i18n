@@ -14,7 +14,7 @@
   <h1>source-i18n</h1>
 
   <p>
-    <strong>키 없는 i18n.</strong><br />
+    <strong>프런트엔드 자동 번역 도구.</strong><br />
     인터페이스를 쓰고, 모든 언어로 출시하세요.
   </p>
 
@@ -35,6 +35,12 @@
 
 <img src="assets/hero.jpg" alt="source-i18n — 인터페이스를 쓰고, 모든 언어로 출시하세요" />
 
+## 무엇인가요
+
+source-i18n은 프런트엔드 프로젝트를 위한 자동 번역 도구입니다. 화면 문구를 평소처럼 중국어나 영어로 작성하면 빌드 시 영어, 일본어, 한국어, 스페인어, 프랑스어 등 언어 버전이 자동으로 생성됩니다. 문장마다 키를 만들거나 언어 파일과 내보내기 표를 관리할 필요가 없습니다.
+
+기업 사이트, 관리자 대시보드, SaaS, Electron 데스크톱 앱에 적합합니다. React, Vue, Svelte, 순수 HTML을 지원합니다.
+
 ## 아이디어
 
 번역 키는 팀이 하나 더 유지해야 하는 언어입니다.
@@ -50,6 +56,12 @@ t('save_project_button_confirm')
 // 변경 후
 t('Save project')
 ```
+
+키를 만들 필요도, 내보낼 파일도 없습니다. 소스 문자열 하나가 빌드 시 다섯 개의 번역이 됩니다.
+
+| 작성 | zh-CN | ja-JP | ko-KR | es-ES | fr-FR |
+|---|---|---|---|---|---|
+| `t('Save project')` | 保存项目 | プロジェクトを保存 | 프로젝트 저장 | Guardar proyecto | Enregistrer le projet |
 
 빌드 시 모든 `t()` 호출이 추출되고, 선택한 공급자로 번역되어 카탈로그로 주입됩니다. 사람의 수정은 보존됩니다. 누락된 문자열은 사용자가 아니라 CI를 실패시킵니다.
 
@@ -243,6 +255,7 @@ source-i18n은 주관이 있습니다. 다음에 잘 맞습니다:
 - MIT 라이선스
 - 패키지: [`source-i18n`](https://www.npmjs.com/package/source-i18n)
 - 소스와 이슈: [`wreckglow/source-i18n`](https://github.com/wreckglow/source-i18n)
+- 연락처: [wreckglow@gmail.com](mailto:wreckglow@gmail.com)
 
 ## 면책 조항
 
