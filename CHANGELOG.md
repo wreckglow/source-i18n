@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.2
+
+- Link the site with trailing slashes (`/cn/`, `/en/`, …): the slash-less locale
+  URLs currently redirect to an internal HTTP port and return 400.
+
 ## 0.1.1
 
 - Add the documentation site: <https://sourcei18n.deploybrain.cn>.

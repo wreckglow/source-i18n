@@ -34,7 +34,7 @@
 </div>
 
 <p align="center">
-  <a href="https://sourcei18n.deploybrain.cn/ko">사이트</a> &nbsp;·&nbsp;
+  <a href="https://sourcei18n.deploybrain.cn/ko/">사이트</a> &nbsp;·&nbsp;
   <a href="https://github.com/wreckglow/source-i18n">GitHub</a>
 </p>
 
@@ -235,7 +235,7 @@ Skill은 Agent Skills 오픈 표준을 따르며 Claude Code에 묶이지 않습
 
 ## 문서
 
-**사이트:** [sourcei18n.deploybrain.cn/ko](https://sourcei18n.deploybrain.cn/ko)
+**사이트:** [sourcei18n.deploybrain.cn/ko/](https://sourcei18n.deploybrain.cn/ko/)
 
 <img src="assets/docs.jpg" alt="source-i18n 문서 사이트" />
 

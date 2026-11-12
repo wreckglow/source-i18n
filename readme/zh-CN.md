@@ -34,7 +34,7 @@
 </div>
 
 <p align="center">
-  <a href="https://sourcei18n.deploybrain.cn/cn">官网</a> &nbsp;·&nbsp;
+  <a href="https://sourcei18n.deploybrain.cn/cn/">官网</a> &nbsp;·&nbsp;
   <a href="https://github.com/wreckglow/source-i18n">GitHub</a>
 </p>
 
@@ -235,7 +235,7 @@ Skill 遵循 Agent Skills 开放标准，不绑定 Claude Code。`.claude/skills
 
 ## 文档
 
-**官网：** [sourcei18n.deploybrain.cn/cn](https://sourcei18n.deploybrain.cn/cn)
+**官网：** [sourcei18n.deploybrain.cn/cn/](https://sourcei18n.deploybrain.cn/cn/)
 
 <img src="assets/docs.jpg" alt="source-i18n 文档站" />
 

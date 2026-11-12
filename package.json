@@ -1,6 +1,6 @@
 {
   "name": "source-i18n",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "module",
   "description": "i18n without keys: write t('your text'), get catalogs generated and machine-translated automatically.",
   "license": "MIT",

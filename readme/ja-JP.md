@@ -34,7 +34,7 @@
 </div>
 
 <p align="center">
-  <a href="https://sourcei18n.deploybrain.cn/ja">サイト</a> &nbsp;·&nbsp;
+  <a href="https://sourcei18n.deploybrain.cn/ja/">サイト</a> &nbsp;·&nbsp;
   <a href="https://github.com/wreckglow/source-i18n">GitHub</a>
 </p>
 
@@ -235,7 +235,7 @@ Skill は Agent Skills オープン標準に従い、Claude Code に縛られま
 
 ## ドキュメント
 
-**サイト：** [sourcei18n.deploybrain.cn/ja](https://sourcei18n.deploybrain.cn/ja)
+**サイト：** [sourcei18n.deploybrain.cn/ja/](https://sourcei18n.deploybrain.cn/ja/)
 
 <img src="assets/docs.jpg" alt="source-i18n ドキュメントサイト" />
 

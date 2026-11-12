@@ -34,7 +34,7 @@
 </div>
 
 <p align="center">
-  <a href="https://sourcei18n.deploybrain.cn/fr">Site web</a> &nbsp;·&nbsp;
+  <a href="https://sourcei18n.deploybrain.cn/fr/">Site web</a> &nbsp;·&nbsp;
   <a href="https://github.com/wreckglow/source-i18n">GitHub</a>
 </p>
 
@@ -240,7 +240,7 @@ Le skill suit le standard ouvert Agent Skills et n'est pas lié à Claude Code. 
 
 ## Documentation
 
-**Site web :** [sourcei18n.deploybrain.cn/fr](https://sourcei18n.deploybrain.cn/fr)
+**Site web :** [sourcei18n.deploybrain.cn/fr/](https://sourcei18n.deploybrain.cn/fr/)
 
 <img src="assets/docs.jpg" alt="site de documentation source-i18n" />
 
